@@ -1,0 +1,30 @@
+{
+  "name": "send-email",
+  "version": "1.0.0",
+  "description": "nodejs 환경에 email 보내는 방법",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --no-notify -r tsconfig-paths/register --files src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "email-templates": "^7.0.2",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/ejs": "^3.0.0",
+    "@types/email-templates": "^6.0.2",
+    "@types/express": "^4.17.2",
+    "@types/nodemailer": "^6.4.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.5"
+  }
+}

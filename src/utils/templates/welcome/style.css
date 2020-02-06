@@ -1,0 +1,57 @@
+/* GENERAL STYLE RESETS */
+body,
+#bodyTable {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#bodyTable {
+  padding: 20px 0 30px 0;
+  background-color: #ffffff;
+}
+img,
+a img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+.imageFix {
+  display: block;
+}
+
+table,
+td {
+  border-collapse: collapse;
+}
+
+div.test {
+  border: 1px solid #79b3f5;
+  border-radius: 5px;
+  max-width: 240px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px;
+  margin: 40px auto;
+  color: red;
+}
+
+h2.title {
+  color: red;
+}
+
+div.header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+
+div.footer {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  color: green;
+}
