@@ -12,7 +12,7 @@ const template = new Email({
   juiceResources: {
     preserveImportant: true,
     webResources: {
-      relativeTo: path.join(__dirname, "./templates"),
+      relativeTo: path.join(__dirname, "../templates"),
       images: true
     }
   },
@@ -35,6 +35,7 @@ const sendMail = (email: { to: string, subject: string; html: string }) => {
   
     transport.sendMail(email, (err) => {
       transport.close();
+      console.log(err);
 
       if (err) resolve(false);
       else resolve(true);
@@ -44,11 +45,11 @@ const sendMail = (email: { to: string, subject: string; html: string }) => {
 };
 
 export const sendSecretMail = async (address: string[], secret: string) => {
-  const html = await template.render(path.join(__dirname, "templates/welcome/index.ejs"), { secret });
+  const html = await template.render(path.join(__dirname, "../templates/welcome.ejs"), { secret });
 
   const email = {
     to: address.join(","),
-    subject: "[Webchemist] 인증 메일입니다.",
+    subject: "[test] 인증 메일입니다.",
     html
   };
 
